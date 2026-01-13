@@ -11,14 +11,24 @@ import mlflow
 import mlflow.sklearn
 import joblib
 import os
+from typing import Tuple, Annotated
 
 
 @step
-def load_data() -> tuple:
+def load_data() -> Tuple[
+    Annotated[pd.DataFrame, "X_train"],
+    Annotated[pd.DataFrame, "X_test"],
+    Annotated[pd.Series, "y_train"],
+    Annotated[pd.Series, "y_test"],
+    Annotated[list, "target_names"]
+]:
     """Load and split the Iris dataset."""
+    import sys
+    import os
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
     from data_loader import prepare_data
     X_train, X_test, y_train, y_test, target_names = prepare_data()
-    return X_train, X_test, y_train, y_test, target_names
+    return X_train, X_test, y_train, y_test, target_names.tolist()
 
 
 @step
