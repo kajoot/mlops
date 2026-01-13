@@ -1,6 +1,8 @@
 """
-FastAPI Inference Service for Iris Classification
+FastAPI Inference API for Iris Classification
+Student MLOps Project 2025-26
 """
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 import joblib
@@ -8,14 +10,14 @@ import numpy as np
 from typing import List
 import os
 
-
+# Initialize FastAPI app
 app = FastAPI(
     title="Iris Classification API",
     description="ML model serving for Iris species classification",
     version="1.0.0"
 )
 
-# Global model variable
+# Global variables for model
 model = None
 model_version = "1.0"
 model_type = "logistic_regression"

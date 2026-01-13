@@ -1,7 +1,8 @@
 """
-Baseline model training with MLflow tracking
-Implements Logistic Regression and SVM classifiers for Iris dataset
+Training script for Iris classification models
+Student: MLOps Mini-Project 2025-26
 """
+
 import mlflow
 import mlflow.sklearn
 from sklearn.linear_model import LogisticRegression
@@ -12,9 +13,26 @@ import os
 import joblib
 from data_loader import prepare_data
 
+# Set random seed for reproducibility
+RANDOM_STATE = 42
+
+
+# Set random seed for reproducibility
+RANDOM_STATE = 42
+
 
 def train_logistic_regression(X_train, y_train, random_state=42, C=1.0, max_iter=1000):
-    """Train Logistic Regression model."""
+    """
+    Train Logistic Regression classifier
+    Args:
+        X_train: Training features
+        y_train: Training labels
+        random_state: Random seed
+        C: Regularization parameter
+        max_iter: Maximum iterations
+    Returns:
+        Trained model
+    """
     model = LogisticRegression(
         random_state=random_state,
         C=C,
@@ -27,7 +45,17 @@ def train_logistic_regression(X_train, y_train, random_state=42, C=1.0, max_iter
 
 
 def train_svm(X_train, y_train, random_state=42, C=1.0, kernel='rbf', gamma='scale'):
-    """Train SVM model."""
+    """
+    Train SVM classifier
+    Args:
+        X_train: Training features  
+        y_train: Training labels
+        C: Regularization parameter
+        kernel: Kernel type (rbf, linear, poly)
+        gamma: Kernel coefficient
+    Returns:
+        Trained SVM model
+    """
     model = SVC(
         random_state=random_state,
         C=C,

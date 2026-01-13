@@ -1,6 +1,8 @@
 """
 Data loader for UCI Iris dataset
+Loads data from sklearn and prepares train/test splits
 """
+
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -8,8 +10,12 @@ import os
 
 
 def load_iris_data():
-    """Load the Iris dataset from scikit-learn."""
+    """
+    Load the Iris dataset from scikit-learn
+    Returns: features (X), labels (y), class names
+    """
     iris = load_iris()
+    # Convert to pandas for easier handling
     X = pd.DataFrame(iris.data, columns=iris.feature_names)
     y = pd.Series(iris.target, name='target')
     

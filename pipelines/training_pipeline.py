@@ -1,6 +1,8 @@
 """
-ZenML Pipeline for Iris Classification
+ZenML Training Pipeline for Iris Classification
+Implements end-to-end ML workflow with ZenML
 """
+
 from zenml import pipeline, step
 from zenml.config import DockerSettings
 import pandas as pd
@@ -22,11 +24,16 @@ def load_data() -> Tuple[
     Annotated[pd.Series, "y_test"],
     Annotated[list, "target_names"]
 ]:
-    """Load and split the Iris dataset."""
+    """
+    Load and prepare Iris dataset
+    Returns train/test splits and target names
+    """
     import sys
     import os
+    # Add src directory to path
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
     from data_loader import prepare_data
+    
     X_train, X_test, y_train, y_test, target_names = prepare_data()
     return X_train, X_test, y_train, y_test, target_names.tolist()
 
