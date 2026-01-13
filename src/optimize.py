@@ -1,5 +1,6 @@
 """
-Hyperparameter optimization with Optuna
+Student: MLOps Mini-Project 2025-26
+Hyperparameter optimization using Optuna framework
 """
 import optuna
 import mlflow
@@ -12,7 +13,17 @@ from data_loader import prepare_data
 
 
 def objective_logistic(trial, X_train, y_train):
-    """Optuna objective function for Logistic Regression."""
+    """
+    Optuna objective function for Logistic Regression hyperparameter tuning.
+    
+    Args:
+        trial: Optuna trial object
+        X_train: Training features
+        y_train: Training labels
+        
+    Returns:
+        Mean cross-validation accuracy score
+    """
     C = trial.suggest_float('C', 0.01, 10.0, log=True)
     max_iter = trial.suggest_int('max_iter', 500, 2000)
     
