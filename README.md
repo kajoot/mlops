@@ -343,34 +343,3 @@ mkdir tests
 # Run with pytest
 pytest tests/
 ```
-
-## 📚 Additional Resources
-
-- [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
-- [DVC Documentation](https://dvc.org/doc)
-- [ZenML Documentation](https://docs.zenml.io/)
-- [Optuna Documentation](https://optuna.readthedocs.io/)
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
-
-## 🎯 Project Requirements Checklist
-
-- [x] Git repository with proper structure
-- [x] DVC for data versioning with remote
-- [x] MLflow experiment tracking (baseline + variations)
-- [x] ZenML pipeline orchestration
-- [x] Optuna hyperparameter optimization
-- [x] Docker containerization (train + serve)
-- [x] Docker Compose for local deployment
-- [x] FastAPI inference service
-- [x] GitLab CI/CD pipeline
-- [x] Version update (v1 → v2) demonstration
-- [x] Rollback mechanism
-- [x] Comprehensive documentation
-
-## 👥 Author
-
-MLOps Mini-Project - 2025-26
-
-## 📝 License
-
-This project is for educational purposes.
