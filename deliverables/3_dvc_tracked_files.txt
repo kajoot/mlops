@@ -1,0 +1,2 @@
+-rw-rw-r-- 1 kajoot kajoot 87 Jan 13 16:00 data/test.csv.dvc
+-rw-rw-r-- 1 kajoot kajoot 89 Jan 13 16:00 data/train.csv.dvc

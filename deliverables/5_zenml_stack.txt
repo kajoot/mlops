@@ -1,0 +1,15 @@
+/home/kajoot/Desktop/Projects/mlops/.venv/lib/python3.12/site-packages/zenml/integrations/integration.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+        Stack Configuration        
+┏━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━┓
+┃ COMPONENT_TYPE │ COMPONENT_NAME ┃
+┠────────────────┼────────────────┨
+┃ ORCHESTRATOR   │ default        ┃
+┠────────────────┼────────────────┨
+┃ ARTIFACT_STORE │ default        ┃
+┗━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━┛
+     'default' stack (ACTIVE)      
+No labels are set for this stack.
+Stack 'default' with id 'c7847152-d546-4e7b-8adb-be6e30ccc362' is unowned.
+You can display various ZenML entities including pipelines, runs, stacks and much more on the ZenML Dashboard. You can try it 
+locally, by running `zenml local --local`, or remotely, by deploying ZenML on the infrastructure of your choice.

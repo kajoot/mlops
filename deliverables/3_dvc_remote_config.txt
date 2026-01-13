@@ -1,0 +1,6 @@
+2026-01-13 17:03:14,326 DEBUG: v3.58.0 (pip), CPython 3.12.3 on Linux-6.14.0-37-generic-x86_64-with-glibc2.39
+2026-01-13 17:03:14,326 DEBUG: command: /home/kajoot/Desktop/Projects/mlops/.venv/bin/dvc remote list -v
+local	/home/kajoot/Desktop/Projects/mlops/dvc_remote
+2026-01-13 17:03:14,481 DEBUG: Analytics is enabled.
+2026-01-13 17:03:14,505 DEBUG: Trying to spawn ['daemon', 'analytics', '/tmp/tmpdmytoaik', '-v']
+2026-01-13 17:03:14,509 DEBUG: Spawned ['daemon', 'analytics', '/tmp/tmpdmytoaik', '-v'] with pid 25610

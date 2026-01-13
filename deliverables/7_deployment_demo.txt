@@ -1,0 +1,22 @@
+=== V1 → V2 → ROLLBACK DEMONSTRATION ===
+
+Step 1: API v1 running on port 8000
+{"status":"healthy","model_loaded":true,"model_version":"1.0","model_type":"logistic"}
+Step 2: Start v2 on port 8001
+mlflow-server is up-to-date
+Starting iris-api-v2 ... 
+Starting iris-api-v2 ... done
+
+Step 3: Both versions running
+    Name                   Command                       State                            Ports                  
+-----------------------------------------------------------------------------------------------------------------
+iris-api-v1     uvicorn api.main:app --hos ...   Up (unhealthy)          0.0.0.0:8000->8000/tcp,:::8000->8000/tcp
+iris-api-v2     uvicorn api.main:app --hos ...   Up (health: starting)   0.0.0.0:8001->8000/tcp,:::8001->8000/tcp
+mlflow-server   mlflow server --backend-st ...   Up                      0.0.0.0:5000->5000/tcp,:::5000->5000/tcp
+
+Step 4: Rollback - Stop v2
+Stopping iris-api-v2 ... 
+Stopping iris-api-v2 ... done
+
+Step 5: v1 continues to serve requests
+{"status":"healthy","model_loaded":true,"model_version":"1.0","model_type":"logistic"}

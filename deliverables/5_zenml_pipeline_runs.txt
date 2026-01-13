@@ -1,0 +1,18 @@
+/home/kajoot/Desktop/Projects/mlops/.venv/lib/python3.12/site-packages/zenml/integrations/integration.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+┏━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━┯━━━━━━━━━┯━━━━━━━━━┓
+┃     PIPELINE NAME      │ RUN NAME                           │ RUN ID                            │ STATUS │ STACK   │ OWNER   ┃
+┠────────────────────────┼────────────────────────────────────┼───────────────────────────────────┼────────┼─────────┼─────────┨
+┃ iris_training_pipeline │ iris_training_pipeline-2026_01_13- │ 6287104e-d594-4c06-8fc7-ec6109a7e │ ❌     │ default │ default ┃
+┃                        │ 15_11_28_807496                    │ cd4                               │        │         │         ┃
+┠────────────────────────┼────────────────────────────────────┼───────────────────────────────────┼────────┼─────────┼─────────┨
+┃ iris_training_pipeline │ iris_training_pipeline-2026_01_13- │ e4ee5579-293a-48e4-8b4c-639427408 │ ❌     │ default │ default ┃
+┃                        │ 15_11_52_464768                    │ bf0                               │        │         │         ┃
+┠────────────────────────┼────────────────────────────────────┼───────────────────────────────────┼────────┼─────────┼─────────┨
+┃ iris_training_pipeline │ iris_training_pipeline-2026_01_13- │ 4fc11b89-9f8a-4b79-b548-28eec9329 │ ✅     │ default │ default ┃
+┃                        │ 15_12_17_935079                    │ 4cc                               │        │         │         ┃
+┠────────────────────────┼────────────────────────────────────┼───────────────────────────────────┼────────┼─────────┼─────────┨
+┃ iris_training_pipeline │ iris_training_pipeline-2026_01_13- │ 9e115f80-1433-4c4c-a101-75feaf078 │ ✅     │ default │ default ┃
+┃                        │ 15_12_22_709410                    │ 61a                               │        │         │         ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━┷━━━━━━━━━┷━━━━━━━━━┛
+Page `(1/1)`, `4` items found for the applied filters.

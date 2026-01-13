@@ -1,0 +1,74 @@
+{
+  "tracking_uri": "http://localhost:5000",
+  "experiments": [
+    {
+      "name": "iris-classification-optimized",
+      "id": "505961081114420853",
+      "total_runs": 1,
+      "runs": [
+        {
+          "run_id": "61a10256ce40",
+          "status": "FINISHED",
+          "params": {
+            "model_type": "logistic_regression",
+            "random_state": "42",
+            "C": "2.417324970419664",
+            "max_iter": "1166",
+            "test_size": "0.2"
+          },
+          "metrics": {
+            "f1_score": 1.0,
+            "accuracy": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "iris-classification",
+      "id": "159871335963554975",
+      "total_runs": 2,
+      "runs": [
+        {
+          "run_id": "3a3bce40b356",
+          "status": "FINISHED",
+          "params": {
+            "model_type": "svm",
+            "random_state": "42",
+            "kernel": "rbf",
+            "gamma": "scale",
+            "C": "1.0",
+            "test_size": "0.2",
+            "max_iter": null
+          },
+          "metrics": {
+            "f1_score": 0.9665831244778613,
+            "accuracy": 0.9666666666666667
+          }
+        },
+        {
+          "run_id": "56b89c1e5be4",
+          "status": "FINISHED",
+          "params": {
+            "model_type": "logistic_regression",
+            "random_state": "42",
+            "kernel": null,
+            "gamma": null,
+            "C": "1.0",
+            "test_size": "0.2",
+            "max_iter": "1000"
+          },
+          "metrics": {
+            "f1_score": 0.9665831244778613,
+            "accuracy": 0.9666666666666667
+          }
+        }
+      ]
+    },
+    {
+      "name": "Default",
+      "id": "0",
+      "total_runs": 0,
+      "runs": []
+    }
+  ]
+}

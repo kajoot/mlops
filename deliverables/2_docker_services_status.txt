@@ -1,0 +1,5 @@
+    Name                   Command                   State                         Ports                  
+----------------------------------------------------------------------------------------------------------
+iris-api-v1     uvicorn api.main:app --hos ...   Up (unhealthy)   0.0.0.0:8000->8000/tcp,:::8000->8000/tcp
+iris-api-v2     uvicorn api.main:app --hos ...   Exit 0                                                   
+mlflow-server   mlflow server --backend-st ...   Up               0.0.0.0:5000->5000/tcp,:::5000->5000/tcp
