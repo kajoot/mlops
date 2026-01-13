@@ -1,0 +1,19 @@
+# Core ML
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy==2.0.2
+
+# MLOps Tools
+mlflow==2.18.0
+zenml==0.71.0
+optuna==4.1.0
+dvc==3.58.0
+
+# API
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic>=2.8,<2.9
+
+# Utilities
+python-dotenv==1.0.1
+pyyaml==6.0.2

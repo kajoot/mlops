@@ -36,18 +36,12 @@ mlruns/
 mlartifacts/
 .zenml/
 zenml_store.db
-# DVC - track .dvc directory but not cache
-!.dvc/
-.dvc/cache/
-.dvc/tmp/
-.dvc/plots/
-*.dvc
-!.dvcignore
 
 # Data
 data/raw/
 data/processed/
-*.csv
+# Track CSV files for DVC
+# *.csv
 *.pkl
 *.h5
 *.joblib
